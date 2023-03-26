@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <button onclick="lightScreen()" id="light">Light</button>
+        <button onclick="darkScreen()" id="light">Dark</button>
+    </header>
+    <div class="container">
+        <div id="main">
+            <h1>Generate a <span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <div id="generate-length">
+                <input type="number" id="length" placeholder="Enter password length" max="20">
+                <div id="options">
+                    <label>
+                        <input type="checkbox" id="include-symbols" checked>
+                        Include Symbols
+                    </label>
+                    <label>
+                        <input type="checkbox" id="include-numbers" checked>
+                        Include Numbers
+                    </label>
+                </div>
+                <button id="generate-pass" onclick="getPasswords()">Generate Passwords</button>
+            </div>
+        </div>
+
+        <div id="password-display">
+            <!-- <hr> -->
+            <button id="first-password">
+            </button>
+            <button id="second-password"></button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
